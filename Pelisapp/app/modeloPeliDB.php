@@ -168,7 +168,7 @@ public static function modeloFileSave($imagen,$tmpArchivo){
     
     $rutaDestino = "./app/img";
     chmod($rutaDestino, 0777);
-    if($tamanoFichero>50000){
+    if($tamanoFichero>500000){
         return false;
     }
     if(move_uploaded_file($tmpArchivo,$rutaDestino."/".$imagen)){
