@@ -1,0 +1,190 @@
+body {
+  background: #CEFFF7;
+  text-align: justify;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  color: #757E82;
+}
+
+.izq{
+        text-align:left;
+    }
+.der{
+        text-align:right;
+    }
+
+#container {
+  background:#fff;
+  border: solid 1px;
+}
+
+#header {
+  background: rgb(205,0,255);
+  background: linear-gradient(166deg, rgba(205,0,255,1) 0%, rgba(192,107,96,1) 50%, rgba(0,255,248,1) 100%);
+  text-align: center;
+  padding: 20px;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+#header h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+
+#content {
+  background: white;
+  clear: left;
+  padding: 20px;
+}
+.verdetalles {
+	display:flex;
+}
+
+#content h2 {
+  color:#000;
+  font-size: 160%;
+  margin: 0 0 .5em;
+}
+
+#aviso {
+	background: white;
+	color: red;
+}
+#info {
+   color:navy;
+   text-align: center;	
+}
+
+li {
+  padding: 18px;
+}
+
+#aviso {
+	background: red;
+	color: black;
+}
+
+.peliculas a {
+  color: #eeaf6d;
+  text-decoration: none;
+}
+a {
+  color: #429;
+  text-decoration: none;
+}
+
+textarea {
+   resize: none;
+}
+
+.peliculas, th, td {
+  border: 1px solid black; 
+  border-collapse:collapse;
+  padding: 4px;
+  
+}
+.peliculas td{
+	background: #34495E;
+	color:#fff;
+}
+select{
+	background: #34495E;
+	color:yellow;
+}
+table{
+	
+	margin:0 auto;
+}
+.botones{
+	text-align:center;
+}
+th {
+	
+	background: #34495E;
+	color: yellow;
+}
+
+#footer {
+  color: white;
+  background: blue;
+  text-align: center;
+  padding: 20px;
+  margin: 0px;
+  height: 1%;
+}
+
+table tr .pag {
+	
+	text-align: center;
+	border:solid 1px #813095;
+	width:20px;
+	height:20px;
+}
+.detalles{
+	text-align:center;
+	width:50%;
+}
+.detallestrailer{
+	text-align:center;
+	width:50%;
+	display: inline;
+  	line-height: 100px;
+}
+
+.nuevo{
+	margin:0 auto;
+	width:370px;
+	text-align:left;
+	
+}
+
+.btn {
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 22px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  display: inline-block;
+}
+
+.green {
+  color: #2ecc71;
+  border: 2px #2ecc71 solid;
+}
+
+.green:hover {
+  color: #fff;
+  background-color: #2ecc71;
+}
+
+.orange {
+  color: #e67e22;
+  border: 2px #e67e22 solid;
+}
+
+.orange:hover {
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.red {
+  color: #F52323;
+  border: 2px #F52323 solid;
+}
+
+.red:hover {
+  color: #fff;
+  background-color: #F52323;
+}
+
