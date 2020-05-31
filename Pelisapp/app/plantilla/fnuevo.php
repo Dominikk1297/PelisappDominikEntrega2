@@ -10,7 +10,7 @@ Nombre     : <input type="text" name="nombre" value="<?= $nombre ?>"><br>
 Director : <input type="text" id="director" name="director" value="<?= $director ?>"><br>
 Denero : <input type="text"    name="genero" value = "<?= $genero ?>" ><br>
 Trailer : <input type="text"    name="trailer" value = "<?= $trailer ?>" ><br>
-Imagen : <input type="file"    name="imagen" value = "<?= $imagen ?>" ><br>
+Imagen (Si sobrepasas los 500kb se subira una imagen por defecto): <input type="file"    name="imagen" value = "<?= $imagen ?>" ><br>
 
 <br>
 	<input class="btn green" type="submit" value="Almacenar">
