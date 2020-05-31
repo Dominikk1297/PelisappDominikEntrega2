@@ -168,7 +168,9 @@ public static function modeloFileSave($imagen,$tmpArchivo){
     
     $rutaDestino = "./app/img";
     chmod($rutaDestino, 0777);
-    
+    if($tamanoFichero>50000){
+        return false;
+    }
     if(move_uploaded_file($tmpArchivo,$rutaDestino."/".$imagen)){
     return true;
     }else return false;
@@ -185,41 +187,7 @@ public static function UserDel($borrapeli){
     return false;
 }
 
-/***
-//
 
-
-// Actualizar un nuevo usuario (boolean)
-// GUARDAR LA CLAVE CIFRADA
-public static function UserUpdate ($userid, $userdat){
-    $clave = $userdat[0];
-    // Si no tiene valor la cambio
-    if ($clave == ""){ 
-        $stmt = self::$dbh->prepare(self::$update_usernopw);
-        $stmt->bindValue(1,$userdat[1] );
-        $stmt->bindValue(2,$userdat[2] );
-        $stmt->bindValue(3,$userdat[3] );
-        $stmt->bindValue(4,$userdat[4] );
-        $stmt->bindValue(5,$userid);
-        if ($stmt->execute ()){
-            return true;
-        }
-    } else {
-        $clave = Cifrador::cifrar($clave);
-        $stmt = self::$dbh->prepare(self::$update_user);
-        $stmt->bindValue(1,$clave );
-        $stmt->bindValue(2,$userdat[1] );
-        $stmt->bindValue(3,$userdat[2] );
-        $stmt->bindValue(4,$userdat[3] );
-        $stmt->bindValue(5,$userdat[4] );
-        $stmt->bindValue(6,$userid);
-        if ($stmt->execute ()){
-            return true;
-        }
-    }
-    return false; 
-}
-****/
 public static function closeDB(){
     self::$dbh = null;
 }
