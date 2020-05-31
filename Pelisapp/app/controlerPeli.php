@@ -37,7 +37,7 @@ function ctlPeliAlta (){
             $imagen=$_FILES['imagen']['name'];
             $tmpArchivo=$_FILES['imagen']['tmp_name'];
             if(modeloUserDB::modeloFileSave($imagen,$tmpArchivo,$tamanoFichero)==false){
-                 header('Location:index.php?orden=Alta');
+                 $imagen="defecto.jpg";
             }
 
             }else $imagen="defecto.jpg";
